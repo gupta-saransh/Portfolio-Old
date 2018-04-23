@@ -22,8 +22,6 @@
 		        {
 		        background-color: white;
 		        height:195px;
-
-
 		        }
                a:link
                {
@@ -47,7 +45,6 @@
                 {
                     text-decoration: underline;
                 }
-
             .skills
             {
                 background-color:0A0A0A;
@@ -56,16 +53,34 @@
                 top:-10px;
                
            }
-
-
 		  </style>
+		  
+            <script>
+            function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML ="Current Time Is: "+
+                h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+            }
+            </script>
 		
   	</head>
 	
-	<body bgcolor="#F2F2F2">
+	<body bgcolor="#F2F2F2" onload="startTime()">
 	 <div class="heading">
-	  <img src="pics/saransh.jpg" height=200 style="position:relative;top: 60px;border: 2px solid white;border-radius: 5px;">
-      
+	   <div  id="txt" style=" color:white; float:right;font-size:25px;"></div>
+	   
+	  <img src="pics/saransh.jpg" height=200 style="position:relative;top: 60px;left:120px;border: 2px solid white;border-radius: 5px;" >
+    
       <p style="font-size:80px"> Saransh Gupta</p>
 	     <h1 style="position:relative;top:-50px" >Greetings Traveler!</h1>
 	
@@ -105,6 +120,7 @@
         <p style="font-size:25px">Mastermind is a code-breaking game tradionally meant for two players.Here, However you play with the computer! Guess the code based on 'hints' given by the computer. Made using C++.</p>
 
 	  </div>
+	   
 	</body>
 	
 </html>
