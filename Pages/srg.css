@@ -1,0 +1,105 @@
+#topbar
+{
+
+
+  height: 40px;
+}
+body{
+  margin:0;
+  padding:0;
+}
+
+#logo
+{
+  margin-top: 8px;
+  margin-right: 6px;
+
+  width:110px;
+  float:left;
+}
+.topbar-section
+
+{
+  float:left;
+
+  height:100%;
+
+
+}
+
+.elemets
+{
+  margin:8px 15px;
+  font-weight: bold;
+  padding:5px 50px 0 15px;
+}
+.menu{
+  font-weight: bold;
+  font-size: 90%;
+  padding: 13px 15px 0 15px;
+  height:27px;
+}
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    /* The image used */
+    background-image: url("pic1.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+
+
+}
+a
+{color: #fff;
+padding: 10px;
+}
+
+
+a:link
+{
+
+text-decoration: none;
+
+ }
+
+ a:visited
+ {
+     text-decoration: none;
+ }
+
+
+
+ a:active
+ {
+     text-decoration: none;
+ }
+
+ .srg
+ {
+   font-family:sans-serif;
+   font-size: 70px;
+   text-align: center;
+   padding: 200px;
+   color:#fff;
+
+
+ }
+ #topbar a:hover{
+
+   color: #43BFE1;
+   background-color:black;
+   border: 2px;border-radius: 5px;
+
+ }
